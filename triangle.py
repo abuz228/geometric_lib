@@ -9,7 +9,14 @@ def area(a, h):
         Возвращаемое значение:
             s (float): площадь треугольника
     '''
+    if(type(a)!=int and type(a)!=float):
+        return -1;
+    if(type(h)!=int and type(h)!=float):
+        return -1;
+    if((a!=0 or h!=0) and (a<=0 or h<=0)):
+        return -1;
     return a * h / 2
+
 def perimeter(a, b, c):
     '''
     Возвращает периметр треугольника
@@ -21,4 +28,13 @@ def perimeter(a, b, c):
         Возвращаемое значение:
             p (float): периметр треугольника
     '''
+    if(type(a)!=int and type(a)!=float):
+        return -1;
+    if(type(b)!=int and type(b)!=float):
+        return -1;
+    if(type(c)!=int and type(c)!=float):
+        return -1;
+    if((a!=0 or b!=0 or c!=0) and (a<=0 or b<=0 or c<=0)):
+        return -1;
+
     return a + b + c
